@@ -10,13 +10,20 @@
 </head>
 
 <body>
-  <div class="main spinner-1">
-    <h1>Hello!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus nam debitis consequatur atque rerum quibusdam
-      maxime! Officiis voluptas, tempora expedita ipsa maxime modi distinctio quas dolore placeat soluta ad quae nemo voluptate
-      voluptatem vel consectetur veniam laudantium eius qui quaerat cumque ex? Error autem quisquam aspernatur veritatis?
-      Qui, quam!</p>
+  <div class="spinner"></div>
+  <div class="main">
+    <h1>Hello from CSS Spinners!</h1>
   </div>
+  <script>
+    document.querySelector('.main').style.display = 'none';
+    document.querySelector('.spinner').classList.add('spinner-3');
+
+    // Mimic server req
+    setTimeout(() => {
+      document.querySelector('.spinner').classList.remove('spinner-3');
+      document.querySelector('.main').style.display = 'flex';
+    }, 3000);
+  </script>
 </body>
 
 </html>

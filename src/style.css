@@ -1,3 +1,19 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  color:#fff;
+  background: #000;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Spinner 1 */
 .spinner-1:before {
   content: "";
@@ -10,8 +26,43 @@
   margin-top: -30px;
   margin-left: -30px;
   border-radius: 50%;
-  border: 3px solid lightgrey;
+  border: 3px solid #fff;
   border-top-color: coral;
+  animation: spinner 0.7s linear infinite;
+}
+
+/* Spinner 2 */
+.spinner-2:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  animation: spinner 0.7s ease infinite;
+}
+
+/* Spinner 3 */
+.spinner-3:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
   animation: spinner 0.7s linear infinite;
 }
 
